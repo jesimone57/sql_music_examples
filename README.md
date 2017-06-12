@@ -3,7 +3,6 @@ This example SQL project was created to practice writing SQL queries for a job i
 will find it useful.   The data is simple and the listing of record labels, albums, artists and songs is just
 for example purposes.  You can try altering the tables to make them more complete and more interesting.
 
-Cheers,
 jesimone57 - 12 June 2017
 
 ### Prerequisites
