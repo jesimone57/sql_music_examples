@@ -36,6 +36,7 @@ INSERT INTO record_label VALUES(2,'Warner Bros');
 INSERT INTO record_label VALUES(3,'Universal');
 INSERT INTO record_label VALUES(4,'MCA');
 INSERT INTO record_label VALUES(5,'Elektra');
+INSERT INTO record_label VALUES(6,'Capitol');
 
 -- Artist table
 CREATE TABLE artist (
@@ -48,14 +49,15 @@ CREATE TABLE artist (
 );
 
 -- Artist data
-INSERT INTO Artist VALUES(1,1,'Metallica');
-INSERT INTO Artist VALUES(2,1,'Megadeth');
-INSERT INTO Artist VALUES(3,1,'Anthrax');
-INSERT INTO Artist VALUES(4,2,'Eric Clapton');
-INSERT INTO Artist VALUES(5,2,'ZZ Top');
-INSERT INTO Artist VALUES(6,2,'Van Halen');
-INSERT INTO Artist VALUES(7,3,'Lynyrd Skynyrd');
-INSERT INTO Artist VALUES(8,3,'AC/DC');
+INSERT INTO Artist VALUES(1, 1,'Metallica');
+INSERT INTO Artist VALUES(2, 1,'Megadeth');
+INSERT INTO Artist VALUES(3, 1,'Anthrax');
+INSERT INTO Artist VALUES(4, 2,'Eric Clapton');
+INSERT INTO Artist VALUES(5, 2,'ZZ Top');
+INSERT INTO Artist VALUES(6, 2,'Van Halen');
+INSERT INTO Artist VALUES(7, 3,'Lynyrd Skynyrd');
+INSERT INTO Artist VALUES(8, 3,'AC/DC');
+INSERT INTO Artist VALUES(9, 6,'The Beatles');
 
 
 -- Album Table
@@ -70,18 +72,19 @@ CREATE TABLE album (
 );
 
 -- Album data
-INSERT INTO album VALUES(1,1,'...And Justice For All',1988);
-INSERT INTO album VALUES(2,1,'Black Album',1991);
-INSERT INTO album VALUES(3,1,'Master of Puppets',1986);
-INSERT INTO album VALUES(4,2,'Endgame',2009);
-INSERT INTO album VALUES(5,2,'Peace Sells',1986);
-INSERT INTO album VALUES(6,3,'The Greater of 2 Evils',2004);
-INSERT INTO album VALUES(7,4,'Reptile',2001);
-INSERT INTO album VALUES(8,4,'Riding with the King',2000);
-INSERT INTO album VALUES(9,5,'Greatest Hits',1992);
-INSERT INTO album VALUES(10,6,'Greatest Hits',2004);
-INSERT INTO album VALUES(11,7,'All-Time Greatest Hits',1975);
-INSERT INTO album VALUES(12,8,'Greatest Hits',2003);
+INSERT INTO album VALUES(1, 1, '...And Justice For All',1988);
+INSERT INTO album VALUES(2, 1, 'Black Album',1991);
+INSERT INTO album VALUES(3, 1, 'Master of Puppets',1986);
+INSERT INTO album VALUES(4, 2, 'Endgame',2009);
+INSERT INTO album VALUES(5, 2, 'Peace Sells',1986);
+INSERT INTO album VALUES(6, 3, 'The Greater of 2 Evils',2004);
+INSERT INTO album VALUES(7, 4, 'Reptile',2001);
+INSERT INTO album VALUES(8, 4, 'Riding with the King',2000);
+INSERT INTO album VALUES(9, 5, 'Greatest Hits',1992);
+INSERT INTO album VALUES(10, 6, 'Greatest Hits',2004);
+INSERT INTO album VALUES(11, 7, 'All-Time Greatest Hits',1975);
+INSERT INTO album VALUES(12, 8, 'Greatest Hits',2003);
+INSERT INTO album VALUES(13, 9, 'Sgt. Pepper's Lonely Hearts Club Band', 1967);
 
 
 -- Song table
@@ -132,6 +135,20 @@ INSERT INTO song VALUES(22,11,'Free Bird',14.23);
 
 INSERT INTO song VALUES(23,12,'Thunderstruck',4.52);
 INSERT INTO song VALUES(24,12,'T.N.T',3.35);
+
+INSERT INTO song VALUES(25,13,'Sgt. Pepper''s Lonely Hearts Club Band', 2.03);
+INSERT INTO song VALUES(26,13,'With a Little Help from My Friends', 2.73);
+INSERT INTO song VALUES(27,13,'Lucy in the Sky with Diamonds', 3.46);
+INSERT INTO song VALUES(28,13,'Getting Better', 2.80);
+INSERT INTO song VALUES(29,13,'Fixing a Hole', 2.60);
+INSERT INTO song VALUES(30,13,'She's Leaving Home', 3.58);
+INSERT INTO song VALUES(31,13,'Being for the Benefit of Mr. Kite!',2.61);
+INSERT INTO song VALUES(32,13,'Within You Without You',5.07);
+INSERT INTO song VALUES(33,13,'When I'm Sixty-Four',2.61);
+INSERT INTO song VALUES(34,13,'Lovely Rita', 2.7);
+INSERT INTO song VALUES(35,13,'Good Morning Good Morning', 2.68);
+INSERT INTO song VALUES(36,13,'Sgt. Pepper's Lonely Hearts Club Band (Reprise)', 1.32);
+INSERT INTO song VALUES(37,13,'A Day in the Life', 5.65);
 
 show tables;
 
