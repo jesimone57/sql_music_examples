@@ -137,8 +137,9 @@ Notes:
 * There is no particular order in these queries.  
 * Some are more difficult than others.
 * Some will require knowing how to create sub-selects with temp tables.
-* All will require knowledge of how to join the tables using the PK and FK.
+* All will require knowledge of how to join the tables using the PK and FK.  Both inner joins and outer joins.
 
+### Questions to Answer
 
 1. List all artists for each record label sorted by artist name. 	  
 2. Which record labels have no artists?	
