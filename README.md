@@ -1,4 +1,10 @@
 # Examples for using MySQL with a music database
+This example SQL project was created to practice writing SQL queries for a job interview.  I hope others 
+will find it useful.   The data is simple and the listing of record labels, albums, artists and songs is just
+for example purposes.  You can try altering the tables to make them more complete and more interesting.
+
+Cheers,
+jesimone57 - 12 June 2017
 
 ### Prerequisites
 * install mysql
@@ -137,7 +143,9 @@ Notes:
 * There is no particular order in these queries.  
 * Some are more difficult than others.
 * Some will require knowing how to create sub-selects with temp tables.
-* All will require knowledge of how to join the tables using the PK and FK.  Both inner joins and outer joins.
+* All will require knowledge of how to join the tables using the PK and FK.  
+* Knowledge of both inner joins and outer joins is required.
+* The solutions SQL queries to the questions are located inside this repository.
 
 ### Questions to Answer
 
