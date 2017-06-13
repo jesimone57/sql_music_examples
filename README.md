@@ -183,7 +183,7 @@ Notes:
 6. How many artists have recorded the least number of songs?  Hint: we can wrap the results of query 5. with another select to give us total artist count. <br/>
 ![6 results](../master/images/6.png)
  
-7. Which artists have recorded songs longer than 5 minutes, and how many songs was that?
+7. Which artists have recorded songs longer than 5 minutes, and if so, how many songs were recorded?
 ![7 results](../master/images/7.png)
 
 8. For each artist and album how many songs were less than 5 minutes long?
