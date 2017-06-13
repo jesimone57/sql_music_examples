@@ -300,7 +300,7 @@ limit 3
 select 
    al.name,
    floor(sum(s.duration)) "Minutes",
-   mod(sum(s.duration), 1)*60 "Seconds"
+   round(mod(sum(s.duration), 1)*60) "Seconds"
 from
    album al join song s on s.album_id = al.id
 where
