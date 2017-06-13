@@ -168,7 +168,7 @@ Notes:
 1. List all artists for each record label sorted by artist name. 
 ![1 results](../master/images/1.png)
 	  
-2. Which record labels have no artists?<br/>
+2. Which record labels have no artists? <br/>
 ![2 results](../master/images/2.png)
 
 3. List the number of songs per artist in descending order
@@ -180,7 +180,7 @@ Notes:
 5. Which artist or artists have recorded the least number of songs?
 ![5 results](../master/images/5.png)
 
-6. How many artists have recorded the least number of songs?  Hint: we can wrap the results of query 5. with another select to give us total artist count.
+6. How many artists have recorded the least number of songs?  Hint: we can wrap the results of query 5. with another select to give us total artist count. <br/>
 ![6 results](../master/images/6.png)
  
 7. Which artists have recorded songs longer than 5 minutes, and how many songs was that?
@@ -189,15 +189,13 @@ Notes:
 8. For each artist and album how many songs were less than 5 minutes long?
 ![8 results](../master/images/8.png)
 
-9. In which year or years were the most songs recorded?
-
+9. In which year or years were the most songs recorded? <br/>
 ![9 results](../master/images/9.png)
 
 10. List the artist, song and year of the top 5 longest recorded songs
 ![10 results](../master/images/10.png)
 
-11. List a table showing the Number of albums recorded for each year.
-
+11. List a table showing the Number of albums recorded for each year. <br/>
 ![11 results](../master/images/11.png)
 
 12. What is the max number of recorded albums across all the years?  Hint: using the above sql as a temp table
