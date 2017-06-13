@@ -183,8 +183,10 @@ Hint: using the above sql as a temp table
 14. List the total duration of all songs recorded by each artist in descending order
 15. for which artist and album are there no songs less than 5 minutes long?
 16. Display a table of all artists, albums, songs and song duration 
-17. List the top 3 artists with the longest average song duration, in descending with longest average first.
-18. What is the total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
 
+17. List the top 3 artists with the longest average song duration, in descending with longest average first.
+![17 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/17.png "results")
+
+18. What is the total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
 ![18 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/18.png "results")
 
