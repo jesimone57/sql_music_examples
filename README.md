@@ -26,7 +26,8 @@ use music;
 CREATE TABLE record_label (
   id int unsigned  not null,
   name varchar(50) not null,
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  UNIQUE KEY uk_name_in_record_label (name)
 );
 
 -- Record Label data
@@ -44,7 +45,8 @@ CREATE TABLE artist (
   name 		varchar(50) not null,
   PRIMARY KEY (id),
   KEY fk_record_label_in_artist (record_label_id),
-  CONSTRAINT fk_record_label_in_artist FOREIGN KEY (record_label_id) REFERENCES record_label (id)
+  CONSTRAINT fk_record_label_in_artist FOREIGN KEY (record_label_id) REFERENCES record_label (id),
+  UNIQUE KEY uk_name_in_artist (record_label_id, name)
 );
 
 -- Artist data
@@ -67,7 +69,8 @@ CREATE TABLE album (
   year     int unsigned not null,
   PRIMARY KEY (id),
   KEY fk_artist_in_album (artist_id),
-  CONSTRAINT fk_artist_in_album FOREIGN KEY (artist_id) REFERENCES artist (id)
+  CONSTRAINT fk_artist_in_album FOREIGN KEY (artist_id) REFERENCES artist (id),
+  UNIQUE KEY uk_name_in_album (artist_id, name)
 );
 
 -- Album data
@@ -94,7 +97,8 @@ CREATE TABLE song (
   duration real not null,
   PRIMARY KEY (id),
   KEY fk_album_in_song (album_id),
-  CONSTRAINT fk_album_in_song FOREIGN KEY (album_id) REFERENCES album (id)
+  CONSTRAINT fk_album_in_song FOREIGN KEY (album_id) REFERENCES album (id),
+  UNIQUE KEY uk_name_in_song (album_id, name)
 );
 
 
@@ -153,9 +157,8 @@ show tables;
 
 </pre>
 
-### Queries to write against this database
+### Usage Notes for the Database exercises
 
-Notes:  
 * There is no particular order to these queries.  
 * Some are more difficult than others.
 * Some will require knowing how to create sub-selects with temp tables.
