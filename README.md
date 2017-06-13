@@ -135,18 +135,18 @@ INSERT INTO song VALUES(22,11,'Free Bird',14.23);
 INSERT INTO song VALUES(23,12,'Thunderstruck',4.52);
 INSERT INTO song VALUES(24,12,'T.N.T',3.35);
 
-INSERT INTO song VALUES(25,13,'Sgt. Pepper''s Lonely Hearts Club Band', 2.03);
-INSERT INTO song VALUES(26,13,'With a Little Help from My Friends', 2.73);
-INSERT INTO song VALUES(27,13,'Lucy in the Sky with Diamonds', 3.46);
+INSERT INTO song VALUES(25,13,'Sgt. Pepper''s Lonely Hearts Club Band', 2.0333);
+INSERT INTO song VALUES(26,13,'With a Little Help from My Friends', 2.7333);
+INSERT INTO song VALUES(27,13,'Lucy in the Sky with Diamonds', 3.4666);
 INSERT INTO song VALUES(28,13,'Getting Better', 2.80);
 INSERT INTO song VALUES(29,13,'Fixing a Hole', 2.60);
-INSERT INTO song VALUES(30,13,'She''s Leaving Home', 3.58);
-INSERT INTO song VALUES(31,13,'Being for the Benefit of Mr. Kite!',2.61);
-INSERT INTO song VALUES(32,13,'Within You Without You',5.07);
-INSERT INTO song VALUES(33,13,'When I''m Sixty-Four',2.61);
+INSERT INTO song VALUES(30,13,'She''s Leaving Home', 3.5833);
+INSERT INTO song VALUES(31,13,'Being for the Benefit of Mr. Kite!',2.6166);
+INSERT INTO song VALUES(32,13,'Within You Without You',5.066);
+INSERT INTO song VALUES(33,13,'When I''m Sixty-Four',2.6166);
 INSERT INTO song VALUES(34,13,'Lovely Rita', 2.7);
-INSERT INTO song VALUES(35,13,'Good Morning Good Morning', 2.68);
-INSERT INTO song VALUES(36,13,'Sgt. Pepper''s Lonely Hearts Club Band (Reprise)', 1.32);
+INSERT INTO song VALUES(35,13,'Good Morning Good Morning', 2.6833);
+INSERT INTO song VALUES(36,13,'Sgt. Pepper''s Lonely Hearts Club Band (Reprise)', 1.3166);
 INSERT INTO song VALUES(37,13,'A Day in the Life', 5.65);
 
 show tables;
