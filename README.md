@@ -168,7 +168,7 @@ Notes:
 1. List all artists for each record label sorted by artist name. 
 ![1 results](../master/images/1.png)
 	  
-2. Which record labels have no artists?	
+2. Which record labels have no artists?<br/>
 ![2 results](../master/images/2.png)
 
 3. List the number of songs per artist in descending order
