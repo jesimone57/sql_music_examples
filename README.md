@@ -180,10 +180,7 @@ Notes:
 5. Which artist or artists have recorded the least number of songs?
 ![5 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/5.png "results")
 
-6. How many artists have recorded the least number of songs?
-
- Hint: we can wrap the results of query 5. with another select to give us total artist count.
- 
+6. How many artists have recorded the least number of songs?  Hint: we can wrap the results of query 5. with another select to give us total artist count.
 ![6 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/6.png "results")
  
 7. Which artists have recorded songs longer than 5 minutes, and how many songs was that?
@@ -201,10 +198,7 @@ Notes:
 11. List a table showing the Number of albums recorded for each year.
 ![11 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/11.png "results")
 
-12. What is the max number of recorded albums across all the years?
-
-Hint: using the above sql as a temp table
-
+12. What is the max number of recorded albums across all the years?  Hint: using the above sql as a temp table
 ![12 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/12.png "results")
 
 13. In which year (or years) were the most (max) number of albums recorded, and how many were recorded?
