@@ -186,3 +186,5 @@ Hint: using the above sql as a temp table
 17. List the top 3 artists with the longest average song duration, in descending with longest average first.
 18. What is the total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
 
+![18 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/18.png "results")
+
