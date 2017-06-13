@@ -12,7 +12,7 @@ order by
 	  
 -- 2. Which record labels have no artists?
 select
-   r.name "Record Label Name"  
+    r.name "Record Label Name"  
 from
     record_label r left join artist a on r.id = a.record_label_id 
 where
@@ -22,15 +22,15 @@ where
 	
 -- 3. List the number of songs per artist in descending order
 select
-   ar.name "Artist Name",
-   count(*) "Number of Songs"
+    ar.name "Artist Name",
+    count(*) "Number of Songs"
 from
-	song s join album  al on s.album_id = al.id
-		   join artist ar on al.artist_id = ar.id
+    song s join album  al on s.album_id = al.id
+    	   join artist ar on al.artist_id = ar.id
 group by
-   ar.name
+    ar.name
 order by
-   count(*) desc
+    count(*) desc
 ;   
    
    
@@ -40,7 +40,7 @@ select
    count(*) "Number of Songs"
 from
     song s join album al on s.album_id = al.id
-		   join artist ar on al.artist_id = ar.id 
+    	   join artist ar on al.artist_id = ar.id 
 group by
    ar.name
 order by
