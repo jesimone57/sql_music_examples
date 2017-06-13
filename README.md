@@ -16,8 +16,7 @@ jesimone57 - 12 June 2017
 * connect your editing environment to the music database
 
 ### Tables and Data for these examples
-<pre>
-	
+<pre>	
 drop database music;
 CREATE DATABASE IF NOT EXISTS music DEFAULT CHARACTER SET utf8;
 use music;
@@ -154,17 +153,17 @@ INSERT INTO song VALUES(36,13,'Sgt. Pepper''s Lonely Hearts Club Band (Reprise)'
 INSERT INTO song VALUES(37,13,'A Day in the Life', 5.65);
 
 show tables;
-
 </pre>
 
-### Usage Notes for the Database exercises
+### Usage Notes for the Database Exercises
 
-* There is no particular order to these queries.  
+* There is no particular order to these SQL query exercises.  
 * Some are more difficult than others.
 * Some will require knowing how to create sub-selects with temp tables.
 * All will require knowledge of how to join the tables using the PK and FK.  
 * Knowledge of both inner joins and outer joins is required.
 * The solution SQL queries to the database exercises are located inside this repository.
+* The correct query responses are provided below.
 
 ### Database exercises
 
