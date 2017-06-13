@@ -296,3 +296,17 @@ order by
 limit 3
 ;
 
+-- 18. Total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
+select 
+   al.name,
+   floor(sum(s.duration)) "Minutes",
+   mod(sum(s.duration), 1)*60 "Seconds"
+from
+   album al join song s on s.album_id = al.id
+where
+   al.name like 'Sgt. Pepper%'
+group by
+   al.name
+   
+   
+   
