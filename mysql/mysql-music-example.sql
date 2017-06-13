@@ -10,7 +10,7 @@ order by
 ;	
 	
 	  
--- 2. select all record labels with no artists
+-- 2. Which record labels have no artists?
 select
    r.name "Record Label Name"  
 from
@@ -20,7 +20,7 @@ where
 ;	
 
 	
--- 3. number of songs per artist in descending order 
+-- 3. List the number of songs per artist in descending order
 select
    ar.name "Artist Name",
    count(*) "Number of Songs"
@@ -34,7 +34,7 @@ order by
 ;   
    
    
--- 4. which artist recorded the most songs?
+-- 4. Which artist or artists have recorded the most number of songs?
 select
    ar.name "Artist Name",
    count(*) "Number of Songs"
@@ -49,7 +49,7 @@ limit 1
 ;
 
 
--- 5. which artist or artists have recorded the least number of songs?
+-- 5. Which artist or artists have recorded the least number of songs?
 select
 	ar.name "Artist Name",
 	count(*) "Number of Songs Recorded"
@@ -79,7 +79,7 @@ having
 -- 6. How many artists have recorded the least number of songs?
 -- Hint: we can wrap the results of query 4. with another select to give us total artist count.
 select 
-	count(*) "number of artists having recorded the least number of songs" 
+	count(*) "Number of Artists Having Recorded the Least Number of Songs" 
 from (
 	select
 		ar.name Artist,
@@ -187,8 +187,8 @@ limit 5
 
 -- 11. Number of albums recorded for each year
 select
-	al.year  "Year Recorded",
-	count(*) c
+	al.year  "Year",
+	count(*) "Number of Albums Recorded"
 from
 	album al
 group by
@@ -200,11 +200,11 @@ group by
 -- 12. What is the max number of recorded albums across all the years?
 -- Hint:  using the above sql as a temp table
 select
-	max(c)
+	max(count) "Max Number of Albums Recorded per year for all Years"
 from (
 		select
-			al.year  "Year Recorded",
-			count(*) c
+			al.year  "Year",
+			count(*) count
 		from
 			album al
 		group by
@@ -213,22 +213,23 @@ from (
 ;
 
 
+
 -- 13. In which year (or years) were the most (max) number of albums recorded, and how many were recorded?
--- using the above sql
+-- Hint: using the above sql as a sub-select
 select
-   al.year  "Year Recorded",
-   count(*) "Number of albums recorded"
+   al.year  "Year",
+   count(*) "Max Number of Albums Recorded"
 from
 	album al
 group by
 	al.year
 having count(*) = (  
     	select
-      		max(c)
+      		max(count)
     	from (
         		select
-           	 		al.year  "Year Recorded",
-           		 	count(*) c
+           	 		al.year  "Year",
+           		 	count(*) count
         		from
             		album al
         		group by
@@ -266,7 +267,7 @@ where
 ;
 
 
--- 16. A table of all artists, albums, songs and song duration 
+-- 16. Display a table of all artists, albums, songs and song duration 
 --     all ordered in ascending order by artist, album and song  
 select 
    ar.name as "Artist Name",
@@ -282,6 +283,7 @@ order by
    s.name asc
 ;
 
+
 -- 17. List the top 3 artists with the longest average song duration, in descending with longest average first.
 select
 	ar.name "Artist Name",
@@ -296,6 +298,7 @@ order by
 limit 3
 ;
 
+
 -- 18. Total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
 select 
    al.name "Album Name",
@@ -307,6 +310,30 @@ where
    al.name like 'Sgt. Pepper%'
 group by
    al.name
+;   
    
    
-   
+-- 19. Which artists did not release an album during the decades of the 1980's and the 1990's?
+select distinct
+	ar.name "Artist Name"
+from 
+	artist ar left join album al on ar.id = al.artist_id and year >= 1980 and year <= 1990 
+where 
+	year is null
+order by
+	ar.name
+;	
+	 
+
+-- 20. Which artists did release an album during the decades of the 1980's and the 1990's? 
+select distinct
+	ar.name "Artist Name"
+from 
+	artist ar left join album al on ar.id = al.artist_id and year >= 1980 and year <= 1990 
+where 
+	year is not null
+order by
+	ar.name 
+; 
+
+ 

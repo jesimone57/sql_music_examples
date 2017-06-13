@@ -156,37 +156,79 @@ show tables;
 ### Queries to write against this database
 
 Notes:  
-* There is no particular order in these queries.  
+* There is no particular order to these queries.  
 * Some are more difficult than others.
 * Some will require knowing how to create sub-selects with temp tables.
 * All will require knowledge of how to join the tables using the PK and FK.  
 * Knowledge of both inner joins and outer joins is required.
-* The solutions SQL queries to the questions are located inside this repository.
+* The solution SQL queries to the database exercises are located inside this repository.
 
-### Questions to Answer
+### Database exercises
 
-1. List all artists for each record label sorted by artist name. 	  
+1. List all artists for each record label sorted by artist name. 
+![1 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/1.png "results")
+	  
 2. Which record labels have no artists?	
-3. List the number of songs per artist in descending order   
+![2 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/2.png "results")
+
+3. List the number of songs per artist in descending order
+![3 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/3.png "results")
+   
 4. Which artist or artists have recorded the most number of songs?
+![4 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/4.png "results")
+
 5. Which artist or artists have recorded the least number of songs?
+![5 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/5.png "results")
+
 6. How many artists have recorded the least number of songs?
+
  Hint: we can wrap the results of query 5. with another select to give us total artist count.
+ 
+![6 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/6.png "results")
+ 
 7. Which artists have recorded songs longer than 5 minutes, and how many songs was that?
+![7 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/7.png "results")
+
 8. For each artist and album how many songs were less than 5 minutes long?
+![8 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/8.png "results")
+
 9. In which year or years were the most songs recorded?
-10. list the artist, song and year of the top 5 longest recorded songs
-11. List a table showing the Number of albums recorded for each year
+![9 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/9.png "results")
+
+10. List the artist, song and year of the top 5 longest recorded songs
+![10 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/10.png "results")
+
+11. List a table showing the Number of albums recorded for each year.
+![11 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/11.png "results")
+
 12. What is the max number of recorded albums across all the years?
+
 Hint: using the above sql as a temp table
+
+![12 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/12.png "results")
+
 13. In which year (or years) were the most (max) number of albums recorded, and how many were recorded?
-14. List the total duration of all songs recorded by each artist in descending order
+![13 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/13.png "results")
+
+14. List the total duration of all songs recorded by each artist in descending order.
+![14 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/14.png "results")
+
 15. for which artist and album are there no songs less than 5 minutes long?
-16. Display a table of all artists, albums, songs and song duration 
+![15 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/15.png "results")
+
+16. Display a table of all artists, albums, songs and song duration, all ordered in ascending order by artist, album and song.
+![16 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/16.png "results") 
 
 17. List the top 3 artists with the longest average song duration, in descending with longest average first.
 ![17 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/17.png "results")
 
 18. What is the total album length for all songs on the Beatles Sgt. Pepper's album - in minutes and seconds.
 ![18 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/18.png "results")
+
+19. Which artists did not release an album during the decades of the 1980's and the 1990's?
+![19 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/19.png "results")
+
+20. Which artists did release an album during the decades of the 1980's and the 1990's?
+![20 results](https://github.com/jesimone57/sql_music_examples/blob/master/images/20.png "results")
+
 
