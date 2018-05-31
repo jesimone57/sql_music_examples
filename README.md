@@ -167,7 +167,7 @@ show tables;
 
 ### Database exercises
 
-1. List all artists for each record label sorted by artist name. 
+1. List all artists for each record label sorted by artist name. <br/>
 ![1 results](../master/images/1.png)
 	  
 2. Which record labels have no artists? <br/>
